@@ -25,9 +25,6 @@ class Timeline extends Component {
         this.props.navigation.pop();
     }
 
-
-
-
     handleNewTweet = async () => {
         const content = this.state.newTweet;
         const author = await AsyncStorage.getItem('@GoTwitter:username');
